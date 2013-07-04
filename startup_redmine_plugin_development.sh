@@ -13,7 +13,8 @@ REDMINE_VERSION="2.3.1"
 
 mkdir $PLUGIN_NAME
 cd ${PLUGIN_NAME}
-wget http://rubyforge.org/frs/download.php/76933/redmine-${REDMINE_VERSION}.tar.gz
+#wget http://rubyforge.org/frs/download.php/76933/redmine-${REDMINE_VERSION}.tar.gz
+cp ~/archives/redmine/redmine-${REDMINE_VERSION}tar.gz .
 tar xvf redmine-${REDMINE_VERSION}.tar.gz
 cd redmine-${REDMINE_VERSION}
 cat > config/database.yml <<_EOS_
